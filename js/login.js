@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //extrayendo elementos 
-    var $email = $('#inputPassword3');
+    var $email = $('#inputEmail3');
    //asociando eventos a los elementos seleccionados
    $email.on('input', function (event){
        $(this).val();
@@ -8,7 +8,7 @@ $(document).ready(function(){
        console.log(PATERNEMAIL.test($(this).val()));
    
     });
-   
+    var $password = $('#inputPassword3');
    $password.on('input', function(event) {
        if($(this).val().length >= 6){
            alert('cumple');
