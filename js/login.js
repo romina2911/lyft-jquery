@@ -2,57 +2,62 @@ $(document).ready(function(){
     //extrayendo elementos 
     var $email = $('#inputEmail3');
     var $password = $('#inputPassword3');
-    var $checkbox =$('.checklog');
+    var $checked =$('input[type=checkbox]');
     var $submit = $('button[type=submit]') 
-    console.log($checkbox);
+   
     //verificando valores para habilitar boton
     var verifyEmail = false;
     var verifyPassword=false;
-    var verifyCheck = false;
+    var verifyChecked = false;
 
 
 
    //asociando eventos a los elementos seleccionados
    //Validando email
-   $email.on('input', function (event){
+   $email.on('input', function (){
        $(this).val();
        var PATERNEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
        console.log(PATERNEMAIL.test($(this).val()));
        if(PATERNEMAIL.test($(this).val())){
-        var verifyEmail = true;
+       verifyEmail = true;
         activeButton();
        }else{
+       verifyEmail = false;
         desactiveButton();
        }
     });
     //validando password
-   $password.on('input', function(event) {
-    if($(this).val().length <= 6){
-        verifyPassword = true;
-        activeButton();
-    }else{
-        desactiveButton();
+   $password.on('input', function() {
+    if($(this).val().length >= 6){
+         verifyPassword = true;
+            activeButton();
+    } else {
+       verifyPassword = false;
+      desactiveButton();
     }
    });
 
    //asociar evento a checkbox
-   $checkbox.on('click', function(event){
+   $checked.on('click', function(event){
        if(event.target.checked){
-           console.log('acepta');
+           verifyChecked=true;
+           activeButton();
        }else{
-        console.log('no acepta');
+        verifyChecked = false;
+        desactiveButton();
        }
    });
 
    //creando función active button
    function activeButton(){
-       if(verifyEmail && verifyPassword)
-           $submit.attr('disabled', true);
+       console.log(verifyEmail&&verifyPassword&&verifyChecked);
+       if(verifyEmail&&verifyPassword&&verifyChecked)
+           $submit.attr('disabled', false);
     
    }
 
    function desactiveButton() {
-        $submit.attr('disabled', false);
+        $submit.attr('disabled', true);
      }
 
 });
