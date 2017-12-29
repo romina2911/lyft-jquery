@@ -60,6 +60,14 @@ $(document).ready(function(){
         $submit.attr('disabled', true);
      }
 
+
+     $submit.on('click', function(){
+        event.preventDefault();
+        localStorage.email = $email.val();
+        localStorage.password = $password.val();
+        window.location.href= 'views/signup.html';
+
+     })
 });
 
  

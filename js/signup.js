@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
-alert('hallo');
+var $input = $(".form-control);
 
 
 
 
+$input.on('click', function(){
 
 
+})
 
 
 });
