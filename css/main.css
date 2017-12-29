@@ -187,10 +187,9 @@ top: 40em;
     width: 8em;
     margin-bottom: 3em;
     position: relative;
-    background-color: transparent;
+    background-color: green;
     border-radius: 6%;
     color: white;
-    outline: 2px solid white;
     bottom:15em;
     right: 22em;
 }
