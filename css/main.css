@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.grad70 {
+    background: linear-gradient(purple 20%,rgb(119, 3, 51));
+  }
+.container-flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+.vh100 {
+	height: 100vh;
+}
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+  
+}
+
+.container-flex-column {
+  display: flex;
+flex-direction:column;
+  justify-content: center;
+	padding: 2em;
+}
+
+img{
+    width: 15em;
+    top: 20em;
+    position: relative;
+}
+.buttons-register {
+    padding: 2em;
+    right: 43rem;
+    position: relative;
+    top: 10rem;
+    background-color: transparent;
+    border-radius: 6%;
+}
+
+.btn-default{
+	padding: 0.5em;
+    margin-bottom: 3em;
+    position: relative;
+    bottom: 15rem;
+    left: 40.5rem;
+    background-color: transparent;
+    border-radius: 6%;
+    color: white;
+   
+}
+
+.label-email{
+     
+      bottom:1em;
+      position: relative;
+      font-size: 15px;
+      color: white;
+   }
+  .title{
+      font-size: 50px;
+    color: white;
+  }
+  .label-password{
+   
+    bottom:1em;
+    position: relative;
+    font-size: 15px;
+    color: white;
+}
+ .form-group{
+     width: 40em;
+     text-align: center;
+     padding-top: 2em;
+     display: inline-block;
+     position: relative;
+     left: 28em;
+     top: 5em;
+     
+   }
+.checkbox{
+    position: relative;
+    top: 6em;
+    font-size: 15px;
+    color:white;
+}
+
+.gdwhite{
+    background: linear-gradient(rgb(214, 1, 125) 25%,rgb(53, 51, 51));
+}
+.text-center{
+    text-align: center;
+    position: relative;
+    top: 2em;
+    right: 0.4em;
+    color: white;
+    font-size: bold;
+  }
+   
+
+
+.join{
+    text-align: center;
+    position: relative;
+    top: 7em;
+    left: 0.6em;
+    color: white;
+    font-size: bold;
+   
+
+}
+
+.input-group{
+    top:8em;
+    left: 1.5em;
+    position: relative;
+    width: 20em;
+}
+.margin-top-btm{
+position: relative;
+top: 10em;
+display: inline-block;
+font-size: 15px;
+left: 2em;
+color: white;
+font-size: bold;
+}
+.back-btn{
+    background-color: rgba(72, 172, 218, 0.959);
+    color: white;
+    width: 3em;
+    height: 2em;
+    padding-top: 0.25em;
+    text-align: center;
+}
+
+#btn-code{
+background-color: rgb(27, 111, 236);
+color: white;
+position: relative;
+top: 40em;
+}
+#btn-next{
+    background-color: rgb(2, 91, 126);
+    display: inline-block;
+    position: relative;
+    top: 10em;
+    right: 2.5em;
+    width: 8em;
+    color: white;
+}
+.label-email{
+    position: relative;
+    bottom: 9em;
+    right:44em;
+}
+.label-password{
+    position: relative;
+    bottom: 9em;
+    right: 28.52em;
+    
+}
+
+#inputEmail3{
+    width: 15em;
+    display: inline-block;
+    position: relative;
+    bottom: 10em;
+    right: 16em;
+
+}
+#inputPassword3{
+    width: 15em;
+    display: inline-block;
+    position: relative;
+    bottom: 12em;
+    right: 16em;
+
+}
+.btn-default2{
+    padding: 1em;
+    width: 8em;
+    margin-bottom: 3em;
+    position: relative;
+    background-color: transparent;
+    border-radius: 6%;
+    color: white;
+    outline: 2px solid white;
+    bottom:15em;
+    right: 22em;
+}
+.checklog{
+    
+    bottom:0.2em;
+    right: 7em;
+}
+.checkbox label{
+   
+    bottom:10em;
+    right:21em;
+    position: relative;
+}
