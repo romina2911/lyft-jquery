@@ -28,9 +28,10 @@ $(document).ready(function(){
     //validando password
    $password.on('input', function(event) {
     if($(this).val().length <= 6){
-        console.log('la contraseña debe tener minimo 6 caracteres');
+        verifyPassword = true;
+        activeButton();
     }else{
-        console.log('contraseña valida');
+        desactiveButton();
     }
    });
 
@@ -45,12 +46,13 @@ $(document).ready(function(){
 
    //creando función active button
    function activeButton(){
-           $submit.attr('disabled', false);
+       if(verifyEmail && verifyPassword)
+           $submit.attr('disabled', true);
     
    }
 
    function desactiveButton() {
-        $submit.attr('disabled', true);
+        $submit.attr('disabled', false);
      }
 
 });
