@@ -47,8 +47,13 @@ $(document).ready(function(){
         desactiveButton();
        }
    });
+//aplicando local storage
+  $submit.on('click', function(event){
+    event.preventDefault();
+    localStorage.email = $email.val();
+    localStorage.password = $password();
 
-   console.log(localStorage);
+  });
 
    //creando función active button
    function activeButton(){
