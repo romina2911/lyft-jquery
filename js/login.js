@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //extrayendo elementos 
+    //extrayendo elementos  y creando variables globales
     var $email = $('#inputEmail3');
     var $password = $('#inputPassword3');
     var $checked =$('input[type=checkbox]');
@@ -48,6 +48,8 @@ $(document).ready(function(){
        }
    });
 
+   console.log(localStorage);
+
    //creando función active button
    function activeButton(){
        console.log(verifyEmail&&verifyPassword&&verifyChecked);
@@ -65,9 +67,10 @@ $(document).ready(function(){
         event.preventDefault();
         localStorage.email = $email.val();
         localStorage.password = $password.val();
-        window.location.href= 'views/signup.html';
+        Window.location.href = "../signup.html";
 
-     })
+     });
+
 });
 
  

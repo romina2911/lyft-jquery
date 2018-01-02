@@ -12,25 +12,48 @@
         <main id="sign-up" class="container-flex-column">
                 <div class="container-fluid">
                  <div class="row">
-                  <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+                  <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-lg-6 col-lg-offset-3">
                    <form class="styles-form">
                      <a class="back-btn pull-left" href="register.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span></span></a>
                      <h1 class="text-center">Sign Up</h1>
                      <p class="join">Join now for free ride credit</p>
-                     <div class="input-group">
-                      <div class="input-group-btn country">
-                       <button id="label" type="button" class="btn dropdown-toggle style-button-secundary-input" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="dLabel">País<span class="caret"></span></button>
-                         <ul class="dropdown-menu"  aria-labelledby="Label">
-                           <li><img src="../assets/img/colombia-flag.png" class="img-responsive" data-target=1></li>
-                           <li><img src="../assets/img/mexico-flag.png" class="img-responsive" data-target=2></li>
-                           <li><img src="../assets/img/peru-flag.png" class="img-responsive" data-target=3></li>
-                           <li><img src="../assets/img/usa-flag" class="img-responsive" data-target=4></li>
-                         </ul>
-                       </div>
-                   
-                     <input id="input-data" type="number" class="form-control" aria-label="...">
-                   </div>
-           
+                <div class="input-group-btn"></div>
+                <button id="dLabel" type="button" class="btn dropdown-toggle style-button-secundary-input" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" aria-labelledby="dLabel">País
+                    <span class="caret"></span>
+                   </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li>
+                        <img src="../assets/img/colombia.ico" class="img-responsive" data-target=1>
+                    </li>
+                    <li>
+                        <img src="../assets/img/mexico.ico" class="img-responsive" data-target=2>
+                    </li>                
+                    <li>
+                        <img src="../assets/img/peru.ico" class="img-responsive" data-target=3>
+                    </li>                
+                    <li>
+                        <img src="../assets/img/usa.ico" class="img-responsive" data-target=4>
+                    </li>                
+                </ul>                
+            </div>                
+                <!-- /btn-group -->            
+                <input id="input-phone" type="number" class="form-control" aria-label="..." placeholder="Enter your phone number">
+            
+                </div>
+                    <!--<div class="input-group">
+                      <div class="input-group-btn">
+                          <div class="form-group">
+                              <button id="dLabel" type="button" class="btn dropdown-toggle style-button-secundary-input" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby="dLabel">País<span class="caret"></span></button>
+                              <select class="form-control" id="sel1">
+                                <ul class="dropdown-menu"  aria-labelledby="dLabel">
+                                   <li><img src="../assets/images/colombia.ico" class="img-responsive" data-target=1></li>
+                                   <li><img src="../assets/images/mexico.ico" class="img-responsive" data-target=2></li>
+                                   <li><img src="../assets/images/peru.ico" class="img-responsive" data-target=3></li>
+                                   <li><img src="../assets/images/usa.ico" class="img-responsive" data-target=4></li>
+                                </ul>
+                              </select>
+                    </div>-->
                    <p class="margin-top-btm">We'll send a text to verify you phone</p>
                    <button id="btn-code" type="button" class="btn style-button-secundary" disabled="disabled">Generate Code</button>
                    <a id="btn-next" type="button" class="btn btn-lg btn-block style-button" disabled>Next</a>

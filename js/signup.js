@@ -1,14 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-var $input = $(".form-control);
+  var $selectcountry = $('#select-country');
+  var $countryMenu = $('country-menu');
 
-
-
-
-$input.on('click', function(){
-
-
-})
-
-
+  $selectcountry.on('click', function(){
+    $(this).attr('src','../assets/imag/per.ico');   
+    
 });
+});
+
