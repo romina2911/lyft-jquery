@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.grad70 {
+    background: linear-gradient(purple 20%,rgb(119, 3, 51));
+  }
+.container-flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+.vh100 {
+	height: 100vh;
+}
+.container-flex-row {
+	display: flex;
+	justify-content: space-between;
+  
+}
+
+.container-flex-column {
+  display: flex;
+flex-direction:column;
+  justify-content: center;
+	padding: 2em;
